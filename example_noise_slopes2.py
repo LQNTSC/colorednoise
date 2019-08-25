@@ -165,7 +165,7 @@ def main():
     plt.subplot(2,2,3)
     f_h = 0.5/tau0
     K0 = 3.0*f_h / (4.0*pow(np.pi,2))
-    plt.loglog(t0, [ np.sqrt(K0*a0)/xx for xx in t0],'--', label=r'$\sqrt{3f_H\over4\pi^2} \sqrt{h_{2}}\tau^{-1}$', color='black')
+    plt.loglog(t0, [ np.sqrt(K0*a0)/xx for xx in t0],'--', label=r'$\sqrt{3f_H\over4\pi^2} \sqrt{h_{2}}\tau^{-3/2}$', color='black')
     plt.loglog(t0,d0,'o', color='black')
     
     # IEEE 1139-2008, table B.2
